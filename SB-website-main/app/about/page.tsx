@@ -38,10 +38,10 @@ const teamMembers = [
     handle: "melek.jrad",
     status: "Active",
     avatarUrl: "https://i.postimg.cc/9QbdtB2M/Capture-d-ecran-2026-08-21-171612.png",
-    linkedin: "https://linkedin.com/in/melek",
+    linkedin: "https://linkedin.com/in/melek jrad",
     github: "https://github.com/melek",
-    email: "mailto:melek@ieee-isgis.org",
-    facebook: "https://facebook.com/melek",
+    email: "mailto:Melek.jrad@ieee.org",
+    facebook: "https://facebook.com/melek jrad",
   },
   {
     name: "Rayen Baklouti",
@@ -188,7 +188,8 @@ export default function AboutPage() {
       <Hero
         title="About Us"
         subtitle="Who we are, what we stand for, and why we do what we do."
-        imageSrc="/about-hero.jpg"
+        imageSrc="https://i.postimg.cc/pd6Rj31C/Capture-d-ecran-2026-08-21-175906.png"
+        imageAlt="IEEE ISGIS Student Branch members"
         scrollHint="Learn more"
       />
 

@@ -1,7 +1,7 @@
 "use client";
 
 import CardSwap, { Card } from "./CardSwap";
-import Link from "next/link";
+import SpecularButton from "./SpecularButton";
 
 interface FeatureCardsProps {
   title: string;
@@ -41,20 +41,31 @@ export default function FeatureCards({
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               {ctaText && ctaLink && (
-                <Link
+                <SpecularButton
                   href={ctaLink}
-                  className="bg-[var(--ieee-blue)] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition shadow-sm"
+                  size="md"
+                  radius={999}
+                  textColor="var(--foreground)"
+                  baseColor="#00629B"
+                  autoAnimate
                 >
                   {ctaText}
-                </Link>
+                </SpecularButton>
               )}
               {ctaSecondaryText && ctaSecondaryLink && (
-                <Link
+                <SpecularButton
                   href={ctaSecondaryLink}
-                  className="border border-[var(--card-border)] text-[var(--foreground)] px-8 py-3 rounded-full font-semibold hover:bg-[var(--card-border)]/20 transition"
+                  size="md"
+                  radius={999}
+                  tint="#00629B"
+                  tintOpacity={0.08}
+                  textColor="var(--foreground)"
+                  lineColor="#00629B"
+                  baseColor="#00629B"
+                  autoAnimate
                 >
                   {ctaSecondaryText}
-                </Link>
+                </SpecularButton>
               )}
             </div>
           </div>

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { useTheme } from "./ThemeProvider";
+import SpecularButton from "./SpecularButton";
 
 export default function navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -115,12 +116,15 @@ export default function navbar() {
           >
             {theme === "light" ? "🌙" : "☀️"}
           </button>
-          <Link
+          <SpecularButton
             href="/join"
-            className="bg-[#00629B] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#004b78] transition"
+            size="sm"
+            radius={999}
+            baseColor="#00629B"
+            autoAnimate
           >
             Join Us
-          </Link>
+          </SpecularButton>
         </div>
 
         {/* Mobile hamburger + toggle */}
@@ -216,13 +220,17 @@ export default function navbar() {
           >
             Contact Us
           </Link>
-          <Link
+          <SpecularButton
             href="/join"
-            className="block bg-[#00629B] text-white text-center px-5 py-2 rounded-full text-sm font-semibold"
+            size="sm"
+            radius={999}
+            baseColor="#00629B"
+            className="w-full"
+            autoAnimate
             onClick={() => setMobileMenuOpen(false)}
           >
             Join Us
-          </Link>
+          </SpecularButton>
         </div>
       )}
     </nav>

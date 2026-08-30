@@ -54,7 +54,7 @@ const CardSwap = ({
   height = 400,
   cardDistance = 60,
   verticalDistance = 70,
-  delay = 1000,            // was 5000 – now much faster
+  delay = 900,            // was 5000 – now much faster
   speed = 1.0,             // new prop – default 1x
   pauseOnHover = false,
   onCardClick,

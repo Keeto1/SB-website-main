@@ -1,8 +1,8 @@
-import Link from "next/link";
 import { generatePageMetadata } from "./lib/seo";
 import Hero from "./components/hero";
 import FeatureCards from "./components/featurecards";
 import ChapterFolder from "./components/chapterfolder";
+import SpecularButton from "./components/SpecularButton";
 
 export const metadata = generatePageMetadata({
   title: "IEEE ISGIS Student Branch",
@@ -24,7 +24,7 @@ export default function HomePage() {
     {
       title: "Women in Engineering",
       description: "Empowering women in STEM.",
-      image: "https://images.unsplash.com/photo-1573164713988-8665fc963f8c?w=400&h=300&fit=crop",
+      image: "https://i.postimg.cc/PqrSF8vp/891da46c-a13b-4aa6-a2fd-7f279fdd1db0.jpg",
       label: "WIE",
     },
     {
@@ -34,9 +34,9 @@ export default function HomePage() {
       label: "Competition",
     },
     {
-      title: "Robotics Workshop",
-      description: "Hands-on robotics for beginners.",
-      image: "https://images.unsplash.com/photo-1527430253228-e93688616381?w=400&h=300&fit=crop",
+      title: "Computer Society",
+      description: "Hands-on cybersequtiry for kids",
+      image: "https://i.postimg.cc/X7gPChjs/Capture-d-ecran-2026-08-25-204327.png",
       label: "Workshop",
     },
   ];
@@ -58,9 +58,9 @@ export default function HomePage() {
       ],
     },
     {
-      name: "Robotics & Automation",
+      name: "Computer Society",
       description: "Hands-on robotics projects, competitions, and automation research. We build robots, participate in international challenges, and collaborate with industry.",
-      logo: "https://images.unsplash.com/photo-1527430253228-e93688616381?w=200&h=200&fit=crop&crop=face",
+      logo: "https://i.postimg.cc/V66fxM7d/Capture-d-ecran-2026-08-25-205401.png",
       folderColor: "#4CAF50",
       stats: [
         { label: "Members", value: "52" },
@@ -98,18 +98,12 @@ export default function HomePage() {
         scrollHint="Explore"
       >
         <div className="mt-6 flex gap-4 flex-wrap justify-center">
-          <Link
-            href="/join"
-            className="bg-[var(--ieee-blue)] text-white px-8 py-3 rounded-full text-sm font-semibold hover:opacity-90 transition"
-          >
+          <SpecularButton href="/join" size="md" radius={999} baseColor="#00629B" autoAnimate>
             Join Us
-          </Link>
-          <Link
-            href="/about"
-            className="border border-white/30 text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-white/10 transition"
-          >
+          </SpecularButton>
+          <SpecularButton href="/about" size="md" radius={999} tintOpacity={0.08} autoAnimate>
             Learn More
-          </Link>
+          </SpecularButton>
         </div>
       </Hero>
 

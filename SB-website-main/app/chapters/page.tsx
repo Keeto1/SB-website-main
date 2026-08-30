@@ -28,9 +28,9 @@ export default function ChaptersPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {[
-            { title: 'Computer Society', chair: 'Chair: Sami Zouari', desc: 'Focus on computing, software engineering, AI, and emerging technologies.' },
-            { title: 'Power & Energy Society', chair: 'Chair: Nour Ayadi', desc: 'Exploring sustainable energy, power systems, and smart grid innovations.' },
-            { title: 'Robotics & Automation', chair: 'Chair: Yassine Gharbi', desc: 'Hands-on robotics projects, competitions, and automation research.' },
+            { title: 'Computer Society (5C)', chair: 'Chair: Yosser Dhouib', desc: 'Focus on computing, software engineering, AI, and emerging technologies.' },
+            { title: 'Industry Application society (IAS)', chair: 'Chair: Nour Ayadi', desc: 'Exploring sustainable energy, power systems, and smart grid innovations.' },
+            { title: 'Women in Engineering (WIE)', chair: 'Chair: Yassine Gharbi', desc: 'Empowering women in STEM through mentorship, networking, and outreach. We host regular talks, workshops, and community events.' },
           ].map((group, i) => (
             <div key={i} className="border border-black/10 dark:border-white/10 rounded-xl p-5 hover:border-[#00629B] transition">
               <h4 className="font-semibold">{group.title}</h4>
@@ -43,7 +43,7 @@ export default function ChaptersPage() {
         <h2 className="text-2xl font-bold mt-12 mb-6">Affinity Groups</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[
-            { title: 'Women in Engineering (WIE)', lead: 'Lead: Amira Bouaziz', desc: 'Empowering women in STEM through mentorship, networking, and outreach.' },
+            { title: 'Women in Engineering (WIE)', lead: 'Lead: ', desc: 'Empowering women in STEM through mentorship, networking, and outreach.' },
             { title: 'Young Professionals (YP)', lead: 'Lead: Khalil Jarraya', desc: 'Career development, entrepreneurship, and professional networking for recent grads.' },
           ].map((group, i) => (
             <div key={i} className="border border-black/10 dark:border-white/10 rounded-xl p-5 hover:border-[#00629B] transition">
